@@ -1,0 +1,103 @@
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+
+#heading {
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* -------------------------- */
+
+
+/* CLASSES TO MAKE MODAL WORK */
+
+.hidden {
+    display: none;
+}
+
+.modal2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    margin-bottom: 1100px;
+    margin-top: 1100px;
+}
+
+.description-modal {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1200px;
+    width: 50%;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    margin-bottom: 700px;
+    margin-top: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 400%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.modal-open {
+    border-radius: 20px;
+    border-style: hidden;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.modal-open:hover {
+    background-color: #009b51;
+    color: whitesmoke;
+}
+
+.description-open {
+    background-color: whitesmoke;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.description-open:hover {
+    background-color: #009b51;
+    color: whitesmoke;
+}
