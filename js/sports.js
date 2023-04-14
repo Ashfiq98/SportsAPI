@@ -20,7 +20,7 @@ const displayTeamsInfo = (data) => {
     const laliga = document.getElementById('laliga');
 
     data.teams.forEach(team => {
-        console.log(team.strDescriptionEN);
+        // console.log(team.strDescriptionEN);
         let str2 = team.strDescriptionEN.replace(/\s+/g, ' ').trim();
         let str3 = str2.replaceAll(/'/g, ' ');
         let str = str3.replaceAll(/"/g, ' ')
@@ -67,7 +67,7 @@ const matchDetailsDescription = (results) => {
 
     detail.innerHTML = '';
     results.forEach(result => {
-        console.log(result)
+        // console.log(result)
         const div = document.createElement('div');
         div.innerHTML = `
                 <div class="card-body">
@@ -105,7 +105,7 @@ const overlay = document.querySelector('.overlay');
 
 
 const openModalDescription = (des) => {
-    console.log('clicked');
+    // console.log('clicked');
     // event.preventDefault();
     descriptionModal.classList.remove('hidden');
     overlay.classList.remove('hidden');
@@ -117,12 +117,12 @@ const closeModalDescription = function() {
     overlay.classList.add('hidden');
 };
 const openModal = function(id) {
-    console.log('clicked')
-        // e.preventDefault();
+    // console.log('clicked')
+    // e.preventDefault();
     modal2.classList.remove('hidden');
     overlay.classList.remove('hidden');
     matchDetails(id);
-    console.log(id);
+    // console.log(id);
 };
 
 
