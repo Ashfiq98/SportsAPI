@@ -1,5 +1,4 @@
 const detail = document.getElementById('detail');
-let idx = 0;
 
 function sports() {
     const url = 'https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League';
@@ -9,10 +8,6 @@ function sports() {
         // .then(data => display2(data))
 }
 sports();
-
-// function matchDetails(teamCode) {
-//     fetch('https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id=${teamCode}')
-// }
 
 function display2(data) {
     console.log(data.teams[0])
@@ -30,8 +25,8 @@ const displayTeamsInfo = (data) => {
         let str3 = str2.replaceAll(/'/g, ' ');
         let str = str3.replaceAll(/"/g, ' ')
 
-        console.log(str.length)
-        console.log(str)
+        // console.log(str.length)
+        // console.log(str)
         const div = document.createElement('div');
         div.classList.add('card');
         //<h6 class="card-title">Stadium : ${team.strStadium}</h6>
